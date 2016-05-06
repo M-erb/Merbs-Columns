@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name" content=""/>
+    <meta name="description" content="display page for merb styles">
+    <meta name="keywords" content="design,grid,grid system">
+    <meta name="theme-color" content="#417BF5">
+    <meta name="p:domain_verify" content="e22136ab81ca3341b04755aadb53f77f"/>
+    <title>Merb styles</title>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/merb-column.css">
+    <link rel="stylesheet" href="css/merb-font-forms.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/merb-nav.css">
+    <link rel="stylesheet" href="css/merb-colors-btn.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--JS-->
+    <script src="js/validation.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <style>
+    .wow:first-child {
+      visibility: hidden;
+    </style>
+    <script>
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+</head>
+<body class="blue_solid">
+    <header class="me-row">
+        <div class="me-col l12 m12 s12 darkgray_solid me-card-4">
+            <div class="me-row">
+                <div class="me-col m2">
+                    <h5 class="me-nav-logo me-padding me-img-responsive">Site Page</h5>
+                </div>
+                <nav class="me-nav me-col m10">
+                    <ul class="me-padding-large">
+                        <a href="#rows"><li class="me-padding">Rows</li></a>
+                        <a href="#pagewrap"><li class="me-padding">Page Wrap</li></a>
+                        <a href="#forms"><li class="me-padding">Forms</li></a>
+                        <a href="#cards"><li class="me-padding">Cards</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="me-row me-banner-3-4">
+        <div class="me-col m12 me-topbottom-l">
+            <h1 class="me-textcenter nunito">Merb's column Demo</h1>
+        </div>
+        <h1 class="me-col m12 me-textcenter">h1 - Merb's Column Demo</h1>
+        <h2 class="me-col m12 me-textcenter">h2 - Merb's Column Demo</h2>
+        <h3 class="me-col m12 me-textcenter">h3 - Merb's Column Demo</h3>
+        <h4 class="me-col m12 me-textcenter">h4 - Merb's Column Demo</h4>
+        <h5 class="me-col m12 me-textcenter">h5 - Merb's Column Demo</h5>
+        <h6 class="me-col m12 me-textcenter">h6 - Merb's Column Demo</h6>
+
+    </div>
+
+    <div class="me-row me-section">
+        <div class="me-row">
+            <div class="me-col m12" id="rows">
+                <div class="me-container">row - with inner padding</div>
+            </div>
+            <div class="me-col m12">
+                <div class="me-container gray_solid me-border-darkgray">12 col</div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m6">
+                <div class="me-container gray_solid me-border-darkgray">6 col</div>
+            </div>
+            <div class="me-col m6">
+                <div class="me-container gray_solid me-border-darkgray">6 col</div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m4">
+                <div class="me-container gray_solid me-border-darkgray">4 col</div>
+            </div>
+            <div class="me-col m4">
+                <div class="me-container gray_solid me-border-darkgray">4 col</div>
+            </div>
+            <div class="me-col m4">
+                <div class="me-container gray_solid me-border-darkgray">4 col</div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m3">
+                <div class="me-container gray_solid me-border-darkgray">3 col</div>
+            </div>
+            <div class="me-col m3">
+                <div class="me-container gray_solid me-border-darkgray">3 col</div>
+            </div>
+            <div class="me-col m3">
+                <div class="me-container gray_solid me-border-darkgray">3 col</div>
+            </div>
+            <div class="me-col m3">
+                <div class="me-container gray_solid me-border-darkgray">3 col</div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m2">
+                <div class="me-container gray_solid me-border-darkgray">2 col</div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-container gray_solid me-border-darkgray">2 col</div>
+            </div>
+            <div class="me-col m4">
+                <div class="me-container gray_solid me-border-darkgray">4 col</div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-container gray_solid me-border-darkgray">2 col</div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-container gray_solid me-border-darkgray">2 col</div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-container gray_solid me-border-darkgray">1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="me-row me-section">
+        <div class="me-col m12">row - no padding</div>
+        <div class="me-col m12 gray_solid me-border-darkgray">12 col</div>
+        <div class="me-col m6 gray_solid me-border-darkgray">6 col</div>
+        <div class="me-col m6 gray_solid me-border-darkgray">6 col</div>
+        <div class="me-col m4 gray_solid me-border-darkgray">4 col</div>
+        <div class="me-col m4 gray_solid me-border-darkgray">4 col</div>
+        <div class="me-col m4 gray_solid me-border-darkgray">4 col</div>
+        <div class="me-col m3 gray_solid me-border-darkgray">3 col</div>
+        <div class="me-col m3 gray_solid me-border-darkgray">3 col</div>
+        <div class="me-col m3 gray_solid me-border-darkgray">3 col</div>
+        <div class="me-col m3 gray_solid me-border-darkgray">3 col</div>
+    </div>
+
+    <div class="me-row-padding me-section">
+        <div class="me-row">
+            <div class="me-col m12">
+                <div class="me-container">row - with inner &amp; outer padding</div>
+            </div>
+            <div class="me-col m12">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">12 col</div>
+                </div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m6">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">6 col</div>
+                </div>
+            </div>
+            <div class="me-col m6">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">6 col</div>
+                </div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m4">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">4 col</div>
+                </div>
+            </div>
+            <div class="me-col m4">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">4 col</div>
+                </div>
+            </div>
+            <div class="me-col m4">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">4 col</div>
+                </div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m3">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">3 col</div>
+                </div>
+            </div>
+            <div class="me-col m3">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">3 col</div>
+                </div>
+            </div>
+            <div class="me-col m3">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">3 col</div>
+                </div>
+            </div>
+            <div class="me-col m3">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">3 col</div>
+                </div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m2">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">2 col</div>
+                </div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">2 col</div>
+                </div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">2 col</div>
+                </div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">2 col</div>
+                </div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">2 col</div>
+                </div>
+            </div>
+            <div class="me-col m2">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">2 col</div>
+                </div>
+            </div>
+        </div>
+        <div class="me-row">
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+            <div class="me-col m1">
+                <div class="me-box-small">
+                    <div class="me-container gray_solid me-border-darkgray">1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="me-row me-section">
+        <div class="me-page-wrap s12 m10 l8 green_solid" id="pagewrap">
+            <div class="me-section">
+                <div class="me-row">
+                    <div class="me-container">
+                        <div class="me-col m12"><h3>Page Wrap</h3></div>
+                    </div>
+                    <div class="me-row">
+                        <div class="me-col m6">
+                            <div class="me-container">
+                                <div class="me-container gray_solid me-border-darkgray" style="min-height:280px">
+                                    <h3>Column 1</h3>
+                                    <p>This is the left column</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="me-col m6">
+                            <div class="me-container">
+                                <div class="me-container gray_solid me-border-darkgray" style="min-height:280px">
+                                    <h2>Column 2</h2>
+                                    <p>This is the right column</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="me-row me-section" id="forms">
+        <div class="me-col m6">
+            <form class="me-form">
+                <div class="me-input-group">
+                    <input name="fname" type="text" placeholder="first name" required/>
+                </div>
+                <div class="me-input-group">
+                    <input name="lname" type="text" placeholder="last name"/>
+                </div>
+                <div class="me-input-group">
+                    <input name="email" type="email" placeholder="email" required/>
+                </div>
+                <div class="me-input-group">
+                    <textarea type="text" cols="3" placeholder="What did you want to talk about?" required></textarea>
+                </div>
+                <div class="me-input-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="me-row me-section">
+        <div class="me-page-wrap">
+            <div class="s12 m10 l8 me-well me-page-wrap me-row">
+                <div class="me-col m12">
+                    <form class="me-form">
+                        <div class="me-input-group">
+                            <input name="fname" type="text" placeholder="first name" required/>
+                        </div>
+                        <div class="me-input-group">
+                            <input name="lname" type="text" placeholder="last name"/>
+                        </div>
+                        <div class="me-input-group">
+                            <input name="email" type="email" placeholder="email" required/>
+                        </div>
+                        <div class="me-input-group">
+                            <textarea type="text" cols="3" placeholder="What did you want to talk about?" required></textarea>
+                        </div>
+                        <div class="me-input-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="me-row me-section" id="cards">
+        <div class="me-col m2 s1"></div>
+        <div class="me-col m4 s12">
+            <div class="me-container">
+                <div class="me-card-24 white_solid me-staticbox-m me-content-center">
+                    <div class="me-row">
+                        <div class="me-col m12">
+                            <img class="me-img-responsive" src="img/dude.jpg" alt="test">
+                        </div>
+                    </div>
+                    <div class="me-row me-container">
+                        <div class="m1"></div>
+                        <div class="m10">
+                            <div class="me-row me-container">
+                                <p>Check this out!</p>
+                                <p>This is a card</p>
+                            </div>
+                        </div>
+                        <div class="m1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-col m4 s12">
+            <div class="me-container">
+                <div class="me-card-24 white_solid me-staticbox-m me-content-center">
+                    <div class="me-row">
+                        <div class="me-col m12">
+                            <img class="me-img-responsive" src="img/dude.jpg" alt="test">
+                        </div>
+                    </div>
+                    <div class="me-row me-container">
+                        <div class="m1"></div>
+                        <div class="m10">
+                            <div class="me-row me-container">
+                                <p>Check this out!</p>
+                                <p>This is a card</p>
+                            </div>
+                        </div>
+                        <div class="m1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="me-col m2 s1"></div>
+    </div>
+    <div class="me-row me-padding-jumbo darkgray_solid">
+        <div class="me-col m8 me-box-medium">
+            <p class="me-text-small me-text-caps">&copy; - Michael Erb - custom 12 column system</p>
+        </div>
+    </div>
+    
+</body>
+</html>

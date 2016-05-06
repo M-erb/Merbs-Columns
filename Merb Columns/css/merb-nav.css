@@ -1,0 +1,4 @@
+.me-nav{text-transform: capitalize}
+.me-nav ul{display: inline-block;float:right}
+.me-nav ul li{display: inline-block;text-transform:uppercase;font-size:70%}
+.me-nav ul a{display: inline-block;color:inherit}
